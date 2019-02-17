@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    //Este es el título
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TLAncho"
+        android:layout_alignTop="@dimen/MargenTOP"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="sans-serif-light"
+        android:text="CalculadoraBasica"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    //Caja de texto Numero uno
+    <EditText
+        android:id="@+id/txto1"
+        android:layout_width="@dimen/LargoTXT"
+        android:layout_height="@dimen/AnchoTXT"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="525dp"
+        android:ems="10"
+        android:hint="@string/txtN1"
+        android:inputType="number"
+        android:text="" />
+
+    //Caja de texto Numero dos
+    <EditText
+        android:id="@+id/txto2"
+        android:layout_width="@dimen/LargoTXT"
+        android:layout_height="@dimen/AnchoTXT"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="141dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="524dp"
+        android:ems="10"
+        android:hint="@string/txtN2"
+        android:inputType="number"
+        android:text="" />
+    // Caja de texto en donde sale el resultado
+    <TextView
+        android:id="@+id/respuesta"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/AnchoTXT"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="228dp"
+        android:fontFamily="sans-serif-condensed-light"
+
+        android:text="0"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="36sp" />
+ //Boton de suma
+    <Button
+        android:id="@+id/btnsumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="230dp"
+        android:layout_marginBottom="406dp"
+        android:text="@string/bsSumar" />
+
+    //Boton de rsta
+    <Button
+        android:id="@+id/btnrestar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginRight="125dp"
+        android:layout_marginBottom="408dp"
+        android:text="@string/bsRestar" />
+    //Boton de multiplicacion
+    <Button
+        android:id="@+id/btnmultiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="230dp"
+        android:layout_marginBottom="343dp"
+        android:text="@string/bsMulti" />
+    //Boton de division
+
+    <Button
+        android:id="@+id/btndividir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="126dp"
+        android:layout_marginBottom="345dp"
+        android:text="@string/bsDividir" />
+
+</RelativeLayout>

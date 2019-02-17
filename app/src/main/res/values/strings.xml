@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CalcuJull</string>
+    <string name="action_settings">Settings</string>
+//  Descripcion de las cajas de texto
+    <string name="txtN1">Primer numero</string>
+    <string name="txtN2">Segundo numero</string>
+//Descripcion de los botones
+    <string name="bsSumar">+</string>
+    <string name="bsRestar">-</string>
+    <string name="bsMulti">x</string>
+    <string name="bsDividir">/</string>
+</resources>
